@@ -16,6 +16,7 @@
       <ul>
         <li class="opcion"><a href="#contador">Contador</a></li>
         <li class="opcion"><a href="#tateti">Ta Te Ti</a></li>
+        <li class="opcion"><a href="#section-ppt">PPT</a></li>
         <li class="opcion"><a href="#clima">App Clima</a></li>
         <li class="opcion"><a href="#todolist">To Do List</a></li>
         <li class="opcion"><a href="#calc">Calculadora</a></li>
@@ -32,20 +33,67 @@
         <div id="contador-resta" class="contador-boton">-</div>
       </div>
     </section>
+    <section id="tateti">
+      <h2>Ta Te Ti</h2>
+      <div class="tateti-btnCtrl">
+        <span></span>
+        <span id="tateti-reset">-</span>
+        <span class="tateti-juega">Juega: <span id="tateti-turno">.</span> </span>
+      </div>
+      <div class="tablero">
+        <div class="fila">
+          <div id="a1" class="celda">X</div>
+          <div id="b1" class="celda">O</div>
+          <div id="c1" class="celda">X</div>
+        </div>
+        <div class="fila">
+          <div id="a2" class="celda">O</div>
+          <div id="b2" class="celda">X</div>
+          <div id="c2" class="celda">O</div>
+        </div>
+        <div class="fila">
+          <div id="a3" class="celda">X</div>
+          <div id="b3" class="celda">O</div>
+          <div id="c3" class="celda">X</div>
+        </div>
+      </div>
+      <span id="mensaje"></span>
+    </section>
+    <section id="section-ppt">
+      <h2>Piedra, Papel o Tijera (Uanchutrí)</h2>
+      <div class="ppt-botones">
+        <div id="piedra" class="ppt">
+          <img src="./img/piedra.png" alt="Piedra">
+        </div>
+        <div id="papel" class="ppt">
+          <img src="./img/papel.png" alt="Papel">
+        </div>
+        <div id="tijera" class="ppt">
+          <img src="./img/tijeras.png" alt="Tijera">
+        </div>
+      </div>
+      <div class="ppt-result">
+        <div id="ppt-bot-juega">
+          <img id="ppt-img" src="./img/reloj.png" alt="Jugada del bot">
+        </div>
+        <div id="ppt-ganador">GANADOR: ?</div>
+      </div>
 
-    <section id="tateti"></section>
+
+
+    </section>
     <section id="clima"></section>
     <section id="todolist"></section>
     <section id="calc"></section>
 
-
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 
     <!-- Proyectos:
-    Contador:
-      Muestra el numero y los botones +, - y reset
-      Extra: boton para crear otro contador... WTF??
-
     Ta te ti:
       Nada, eso, un tateti.
       Extra: que juegue contra vos.
@@ -58,7 +106,7 @@
       Extra: crear API para recuperar y guardar los datos.
 
     Calculadora:
-   -->
+  -->
   </main>
   <footer>
 

@@ -15,6 +15,10 @@ body {
   align-items: center;
 }
 
+footer {
+  height: 600px;
+}
+
 header {
   width: 100%;
   padding: 10px 20px;
@@ -52,9 +56,14 @@ header li:hover {
   font-size: 18px;
 }
 
+h2 {
+  font-size: 40px;
+}
+
 .contenedor {
   width: 100%;
   display: flex;
+  flex-direction: column;
 }
 
 #contador {
@@ -64,6 +73,7 @@ header li:hover {
   justify-content: center;
   align-items: center;
   margin-top: 60px;
+  display: none;
 }
 
 #contador h3 {
@@ -83,4 +93,137 @@ header li:hover {
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#tateti {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  display: none;
+}
+
+.tateti-btnCtrl {
+  display: flex;
+}
+
+#tateti-reset {
+  font-size: 25px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tateti-juega {
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tablero {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2px;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.celda {
+  width: 130px;
+  height: 130px;
+  background-color: cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#mensaje {
+  font-size: 30px;
+}
+
+#section-ppt {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.ppt-botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+.ppt {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: blue;
+  box-shadow: 0 0 5px black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+}
+
+.ppt-result {
+  width: 320px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  background: rgb(0, 59, 0);
+  box-shadow: 0 0 5px black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-top: 10px;
+  border: 1px solid gray;
+}
+
+.ppt-botones img,
+.ppt-result img {
+  width: 70px;
 }
