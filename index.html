@@ -13,13 +13,21 @@
   <header>
     <h1 class="nombre">Proyectos Javascript</h1>
     <nav class="navbar">
-      <ul>
+      <ul class="navbar-old">
         <li class="opcion"><a href="#contador">Contador</a></li>
         <li class="opcion"><a href="#tateti">Ta Te Ti</a></li>
         <li class="opcion"><a href="#section-ppt">PPT</a></li>
         <li class="opcion"><a href="#clima">App Clima</a></li>
         <li class="opcion"><a href="#todolist">To Do List</a></li>
         <li class="opcion"><a href="#calc">Calculadora</a></li>
+      </ul>
+      <ul class="navbar">
+        <li class="opcion"><a id="btn-contador">Contador</a></li>
+        <li class="opcion"><a id="btn-tateti">Ta Te Ti</a></li>
+        <li class="opcion"><a id="btn-section-ppt">PPT</a></li>
+        <li class="opcion"><a id="btn-clima">App Clima</a></li>
+        <li class="opcion"><a id="btn-todolist">To Do List</a></li>
+        <li class="opcion"><a id="btn-calc">Calculadora</a></li>
       </ul>
     </nav>
   </header>
@@ -82,8 +90,18 @@
 
 
     </section>
-    <section id="clima"></section>
+    <section id="clima">
+      <h2>Clima</h2>
+      <div class="clima-container">
+        <p class="temp"><span id="temp-num"></span>º</p>
+        <p id="nose"></p>
+      </div>
+
+
+    </section>
+
     <section id="todolist"></section>
+
     <section id="calc"></section>
 
     <br>
@@ -114,6 +132,7 @@
 
 
   <script src="./assets/scripts.js"></script>
+  <script src="./assets/script-menu.js"></script>
 </body>
 
 </html>

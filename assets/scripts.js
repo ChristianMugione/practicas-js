@@ -271,14 +271,26 @@ function clickTijera() {
   pptGanador.innerHTML = "Vos jugaste tijeras<br>Yo jugué " + jugadaBot + "<br>" + pptResult;
 }
 
-let arr = [0 , 0 , 0];
-arr[1]=1;
-arr[1]=arr[1]+1;
-arr[1]++;
-let pedo=2;
-arr[pedo]=1;
-for (let i; i < 100; i++) {
-  let aleatorio = Math.floor(Math.random() * 3);  
-  arr[aleatorio]++;
-  console.log(i);
-}
+///////////////////////////////
+
+// Clima
+
+// URL API: https://api.open-meteo.com/v1/forecast?latitude=-38.7196&longitude=-62.2724&hourly=temperature_2m,relativehumidity_2m,dewpoint_2m,apparent_temperature,precipitation_probability,precipitation,rain&timezone=America%2FSao_Paulo
+
+const url = 'https://api.open-meteo.com/v1/forecast?latitude=-38.7196&longitude=-62.2724&current_weather=true&hourly=temperature_2m,relativehumidity_2m,dewpoint_2m,apparent_temperature,precipitation_probability,precipitation,rain&timezone=America%2FSao_Paulo'
+
+const pantallaTemp = document.getElementById('temp-num');
+const pantallaNose = document.getElementById('nose');
+
+fetch(url)
+.then(temp => temp.json())
+.then(data => {
+  const temperatura = data.current_weather.temperature
+
+  console.log(data);
+
+  pantallaTemp.innerHTML = temperatura
+  pantallaNose.innerHTML = data;
+})
+.catch(err => console.log('Error:' + err))
+
