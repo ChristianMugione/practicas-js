@@ -25,13 +25,23 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: gray;
-  box-shadow: 0 0 5px gray;
+  background: rgb(71, 71, 128);
+  box-shadow: 0 0 5px blue;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .nombre {
   color: antiquewhite;
-  text-shadow: 0 0 5px #333;
+  text-shadow: 0 0 8px #000;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 header ul {
@@ -51,11 +61,22 @@ header li {
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 header li:hover {
-  /* background-color: aquamarine; */
+  /*background-color: aquamarine;
+  */
   box-shadow: 0 0 20px aquamarine;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .navbar-old {
@@ -84,7 +105,11 @@ h2 {
   justify-content: center;
   align-items: center;
   margin-top: 60px;
-  /*display: none;  */
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
 #contador h3 {
@@ -117,7 +142,11 @@ h2 {
   justify-content: center;
   align-items: center;
   margin-top: 60px;
-  /* display: none; */
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
 .tateti-btnCtrl {
@@ -128,20 +157,25 @@ h2 {
   font-size: 25px;
   padding: 10px;
   border: 1px solid black;
-  border-radius: 10px;
   margin: 10px;
   cursor: pointer;
+  border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
 .tateti-juega {
   font-size: 25px;
   padding: 10px;
-  border-radius: 10px;
   margin: 10px;
+  border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -191,6 +225,11 @@ h2 {
   justify-content: center;
   align-items: center;
   margin-top: 60px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
 .ppt-botones {
@@ -247,6 +286,11 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
 .clima-container {
@@ -261,6 +305,11 @@ h2 {
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
   box-shadow: 0 2px 10px -6px black;
+}
+
+#img-clima {
+  margin-top: 20px;
+  width: 20vw;
 }
 
 .temp {
