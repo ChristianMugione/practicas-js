@@ -278,6 +278,10 @@ h2 {
   width: 70px;
 }
 
+#ppt-ganador {
+  color: white;
+}
+
 #clima {
   width: 100%;
   text-align: center;
